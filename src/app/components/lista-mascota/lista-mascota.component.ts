@@ -160,7 +160,14 @@ const listMascotas: Mascota[] = [
   styleUrls: ['./lista-mascota.component.scss'],
 })
 export class ListaMascotaComponent implements AfterViewInit {
-  displayedColumns: string[] = ['nombre', 'edad', 'raza', 'color', 'peso'];
+  displayedColumns: string[] = [
+    'nombre',
+    'edad',
+    'raza',
+    'color',
+    'peso',
+    'acciones',
+  ];
   dataSource = new MatTableDataSource<Mascota>(listMascotas);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
