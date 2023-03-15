@@ -13,6 +13,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [SpinnerComponent],
@@ -29,6 +31,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatCardModule,
     MatSnackBarModule,
     MatProgressBarModule,
+    MatGridListModule,
+    ReactiveFormsModule,
   ],
   exports: [
     CommonModule,
@@ -44,6 +48,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatSnackBarModule,
     SpinnerComponent,
     MatProgressBarModule,
+    MatGridListModule,
+    ReactiveFormsModule,
   ],
 })
 export class SharedModule {}
