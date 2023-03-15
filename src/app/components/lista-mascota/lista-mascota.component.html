@@ -1,7 +1,7 @@
 <div class="title">
   <h1>Listado de Mascotas</h1>
 </div>
-
+<app-spinner *ngIf="loading"></app-spinner>
 <div class="container">
   <mat-form-field>
     <mat-label>Filtro</mat-label>
@@ -77,7 +77,7 @@
           matTooltip="Editar"
         ></mat-icon>
         <mat-icon
-          routerLink="/verMascota/1"
+          (click)="eliminarMascota()"
           class="delete"
           aria-hidden="false"
           aria-label="Example home icon"
